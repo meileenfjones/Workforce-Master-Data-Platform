@@ -30,7 +30,7 @@ List all packages/technologies needed to build the program
 1. Download most recent python on C drive [latest version for Windows](https://www.python.org/downloads/)
 2. Download the [latest release](https://github.com/OleHealth/Crossroads-Survey-Automation/releases/latest) and unzip.
 3. Open a Windows Command Prompt Terminal
-4. Change directory to the Employee-Roster folder
+4. Change directory to the script folder
 
   ```
   cd Workforce
