@@ -4,7 +4,7 @@ __Background__
 Workforce is a project to maintain a list of staff for reporting and internal tracking purposes.
 
 __Deliverables__  
-The final product will be tables that support data for Network Users, Employees, Learners, Contractors, and Volunteers
+The final product will be tables that support data for a variety of users like Network Users, Employees, Learners, Contractors, and Volunteers
 
 ## Prerequisites
 
@@ -28,7 +28,7 @@ List all items needed for the program to work
 List all packages/technologies needed to build the program
 
 1. Download most recent python on C drive [latest version for Windows](https://www.python.org/downloads/)
-2. Download the [latest release](https://github.com/OleHealth/Crossroads-Survey-Automation/releases/latest) and unzip.
+2. Download the [latest release] and unzip.
 3. Open a Windows Command Prompt Terminal
 4. Change directory to the script folder
 
@@ -104,10 +104,10 @@ List important files to know about and how they work together
 `active_directory_tools.py`
 - tools to parse/clean/update specific info in Active Directory
 
-`ccole_sql_connection.py`
+`sql_connection.py`
 - connect to internal server and workforce database
 
-`relevant_connection.py`
+`analytics_platform_connection.py`
 - connect to analytics server
 
 `active_directory_users.py`
@@ -120,18 +120,17 @@ List important files to know about and how they work together
 - script to query Timecards and update Employee Hours related tables
 
 `workforce_map_updates.py`
-- script to insert new matches between Employees and Network Users into workforce_map and update existing rows with 
-epic id and relevant id
+- script to insert new matches between Employees and Network Users into workforce_map and update existing rows
 
 ### Methodology
 
 1. Connect to ADP API and internal data source
-2. Query Workers (5:30 AM) and Timecards (5:00 AM Sun, Th) 
+2. Query Workers and Timecards
 3. Update Employee tables with updated or inserted data
 4. Logs the script run in log
-5. Connect to Active Directory to query and update Network Users table (5:35 AM) 
-6. Update workforce_map table with changes and new matches (5:45 AM) 
-7. Acquisition plan pulls workforce data into analytics platform (5:55 AM M-F)
+5. Connect to Active Directory to query and update Network Users table 
+6. Update workforce_map table with changes and new matches
+7. Acquisition plan pulls workforce data into analytics platform 
 
 
 ## Resources
